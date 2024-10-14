@@ -1,0 +1,26 @@
+Problem Statement:
+
+The task is to write a Python program that generates and displays the calendar for a user-specified year. The program will prompt the user to input a year, and using Python's built-in `calendar` module, it will generate the calendar for all 12 months of that year. Each week in the calendar should start on Sunday, and after displaying each month's calendar, the program will print a separator line for better readability. The objective is to make the output neatly formatted and easy to understand, providing a simple way to view the entire year's calendar at once.
+
+Algorithm to Generate a Calendar for a Given Year:
+
+1. Start  
+2. Input the year  
+   - Prompt the user to input the desired year.
+   - Store the input in a variable .
+3. Import the "calendar" module  
+   - Import the "calendar" module, which contains functions to generate calendars.
+4. Create a TextCalendar object  
+   - Use the "calendar.TextCalendar(calendar.SUNDAY)" to create a calendar object that starts each week on Sunday.
+5. Print the header
+   - Display a header for the calendar indicating the year.
+6. Iterate through each month
+   - Use a loop to iterate over the months (from 1 to 12):
+     - For each month, call the "prmonth()" method of the "TextCalendar" object to print the calendar for that month.
+7. Print a separator line  
+   - After printing each month's calendar, display a separator  for better readability.
+8. Repeat until all 12 months are printed
+9. Stop
+
+Conclusion:
+This program simplifies the process of generating a full-year calendar using Python's `calendar` module. It efficiently displays each month's calendar, starting from Sunday, and separates the months for better readability. By automating the generation of calendars, the program demonstrates the ease and usefulness of Python's built-in tools for handling date-related tasks.
