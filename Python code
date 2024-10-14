@@ -1,0 +1,15 @@
+import calendar
+
+# Input year from the user
+year = int(input("Enter the year: "))
+
+# Print the calendar for the entered year
+print(f"\n********** Calendar for {year} ************\n")
+
+# Create a TextCalendar object starting on Sunday
+cal = calendar.TextCalendar(calendar.SUNDAY)
+
+# Print the calendar for each month of the year
+for month in range(1, 13):
+    cal.prmonth(year, month) 
+    print("-----------------")
